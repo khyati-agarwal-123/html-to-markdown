@@ -17,12 +17,7 @@ Column Name | Data Type | Description
 `OWNER` |  `VARCHAR(129)` |  User name of the vector index owner  
 `INDEX_NAME` |  `VARCHAR(129)` |  Name of the vector index  
 `PARTITION_NAME` |  `VARCHAR(129)` |  Object partition name (set to `NULL` for non-partitioned objects)   
-`INDEX_ORGANIZATION` |  `VARCHAR(129)` |  The vector index organization. The value can be one of the following: 
-
-  * `NEIGHBOR PARTITIONS`
-  * `INMEMORY NEIGHBOR GRAPH`
-
-  
+`INDEX_ORGANIZATION` |  `VARCHAR(129)` |  The vector index organization. The value can be one of the following:  `NEIGHBOR PARTITIONS` `INMEMORY NEIGHBOR GRAPH`
 `INDEX_OBJN` |  `NUMBER` |  Index object number  
 `ALLOCATED_BYTES` |  `NUMBER` |  Total amount of memory allocated to this vector index, in bytes. When the vector index is an IVF index, the value is `0`.   
 `USED_BYTES` |  `NUMBER` |  Total amount of memory currently used by the vector index, in bytes. When the vector index is an IVF index, the value is `0`.   
