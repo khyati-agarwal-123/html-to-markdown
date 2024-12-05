@@ -1,0 +1,22 @@
+[Previous](all_vector_lang.html) [Next](user_vector_lang.html) JavaScript must be enabled to correctly display this content 
+
+  1. [AI Vector Search User's Guide](index.html)2. [Vector Diagnostics](vector-diagnostics-node.html)
+  3. [Oracle AI Vector Search Views](oracle-ai-vector-search-views.html)4. [Text Processing Views](text-processing-views.html)
+  5. USER_VECTOR_ABBREV_TOKENS
+
+
+
+## USER_VECTOR_ABBREV_TOKENS
+
+The `USER_VECTOR_ABBREV_TOKENS` view displays a list of abbreviation tokens from all languages loaded by the current user. 
+
+Column Name | Data Type | Description  
+---|---|---  
+ABBREV_LANGUAGE | NUMBER | Language ID for the language (for example, 1 for American)  
+ABBREV_TOKEN | NVARCHAR2(255) | List of all abbreviation tokens corresponding to each language  
+  
+**Parent topic:** [Text Processing Views](text-processing-views.html "These views display language-specific data \(abbreviation token details\) and vocabulary data related to the Oracle AI Vector Search SQL and PL/SQL utilities.")
+
+[← Previous](all_vector_lang.md)
+
+[Next →](user_vector_lang.md)

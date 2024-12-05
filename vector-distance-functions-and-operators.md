@@ -1,0 +1,44 @@
+[Previous](use-sql-functions-vector-operations.html) [Next](vector-distance-metrics.html) JavaScript must be enabled to correctly display this content 
+
+  1. [AI Vector Search User's Guide](index.html)2. [Use SQL Functions for Vector Operations](use-sql-functions-vector-operations.html)
+  3. Vector Distance Functions and Operators
+
+
+
+## Vector Distance Functions and Operators
+
+A vector distance function takes in two vector operands and a distance metric to compute a mathematical distance between those two vectors, based on the distance metric provided. You can optionally use shorthand distance functions and operators instead of their corresponding distance functions.
+
+Distances determine similarity or dissimilarity between vectors.
+
+  * [Vector Distance Metrics](vector-distance-metrics.html)  
+Measuring distances in a vector space is at the heart of identifying the most relevant results for a given query vector. That process is very different from the well-known keyword filtering in the relational database world. 
+  * [VECTOR_DISTANCE](vector_distance.html)  
+`VECTOR_DISTANCE` is the main function that you can use to calculate the distance between two vectors. 
+  * [L1_DISTANCE](l1_distance.html)  
+`L1_DISTANCE` is a shorthand version of the `VECTOR_DISTANCE` function that calculates the distance between two vectors. It takes two vectors as input and returns the distance between them as a `BINARY_DOUBLE`. 
+  * [L2_DISTANCE](l2_distance.html)  
+`L2_DISTANCE` is a shorthand version of the `VECTOR_DISTANCE` function that calculates the distance between two vectors. It takes two vectors as input and returns the distance between them as a `BINARY_DOUBLE`. 
+  * [COSINE_DISTANCE](cosine_distance.html)  
+`COSINE_DISTANCE` is a shorthand version of the `VECTOR_DISTANCE` function that calculates the distance between two vectors. It takes two vectors as input and returns the distance between them as a `BINARY_DOUBLE`. 
+  * [INNER_PRODUCT](inner_product.html)  
+`INNER_PRODUCT` calculates the inner product of two vectors. It takes two vectors as input and returns the inner product as a `BINARY_DOUBLE`. `INNER_PRODUCT(<expr1>, <expr2>)` is equivalent to `-1 * VECTOR_DISTANCE(<expr1>, <expr2>, DOT)`. 
+  * [HAMMING_DISTANCE](hamming_distance-vecse.html)  
+`HAMMING_DISTANCE` is a shorthand version of the `VECTOR_DISTANCE` function that calculates the distance between two vectors. It takes two vectors as input and returns the distance between them as a `BINARY_DOUBLE`. 
+  * [JACCARD_DISTANCE](jaccard_distance-vecse.html)  
+`JACCARD_DISTANCE` is a shorthand version of the `VECTOR_DISTANCE` function that calculates the distance between two vectors. It takes two `BINARY` vectors as input and returns the distance between them as a `BINARY_DOUBLE`. 
+
+
+
+**Related Topics**
+
+  * [Perform Exact Similarity Search](perform-exact-similarity-search.html#GUID-CCCF06F5-AD46-466D-99B2-4609B84C2B69 "A similarity search looks for the relative order of vectors compared to a query vector. Naturally, the comparison is done using a particular distance metric but what is important is the result set of your top closest vectors, not the distance between them.")
+  * [Perform Approximate Similarity Search Using Vector Indexes](perform-approximate-similarity-search-using-vector-indexes.html#GUID-D8432ADA-38B0-4E5F-975F-E86977CA8488 "For a vector search to be useful, it needs to be fast and accurate. Approximate similarity searches seek a balance between these goals.")
+
+
+
+**Parent topic:** [Use SQL Functions for Vector Operations](use-sql-functions-vector-operations.html "There are a number of SQL functions and operators that you can use with vectors in Oracle AI Vector Search.")
+
+[← Previous](use-sql-functions-vector-operations.md)
+
+[Next →](vector-distance-metrics.md)
